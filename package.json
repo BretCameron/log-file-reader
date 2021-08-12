@@ -1,0 +1,16 @@
+{
+  "name": "log-file-reader",
+  "description": "A convenient way of extracting data from 3D Systems’ RTF log files.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bret Cameron <bretcameron@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "read": "node . ./log.rtf"
+  },
+  "type": "module",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
