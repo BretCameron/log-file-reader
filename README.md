@@ -2,7 +2,7 @@
 
 This project contains a script to help extract information from a 3D Systems RTF log file.
 
-To use this project, you need [Node.js](https://nodejs.org/en/) v14+ installed.
+To use this project, you need [Node.js v14+](https://nodejs.org/en/) installed.
 
 ## Running the Script
 
@@ -26,4 +26,4 @@ Install [Yarn](https://yarnpkg.com/), then go to the terminal and run:
 yarn
 ```
 
-You can develop the project simply by following the instructions above
+You can develop the project simply by following the instructions above.
