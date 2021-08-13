@@ -5,7 +5,7 @@ if (process.argv.length < 3) {
 }
 
 const filePath = process.argv[2];
-const searchQuery = process.argv?.[3];
+const searchQuery = process.argv.length > 3 ? process.argv[3] : "";
 
 const lines = readFileSync(filePath, "utf8").split(`\n`);
 
@@ -44,7 +44,7 @@ for (const line of lines) {
     obj.failureInfo.add(line.slice(50).trim().replace("\\par", ""));
   }
 
-  if (searchQuery?.test(line)) {
+  if (searchQuery && searchQuery.test(line)) {
     obj.query = obj.query || new Set();
     obj.query.add(line.slice(50).trim().replace("\\par", ""));
   }
