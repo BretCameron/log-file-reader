@@ -13,12 +13,12 @@ const lines = readFileSync(filePath, "utf8").split(`\n`);
 const obj = {};
 
 const regex = {
-  model: /(?<=\[ ba8\] Model:\s+).+(?=\\par)/,
-  serialNumber: /(?<=\[ ba8\] S\/N:\s+).+(?=\\par)/,
-  printerName: /(?<=\[ ba8\] Printer\sName:\s+).+(?=\\par)/,
-  version: /(?<=\[ ba8\] Version:\s+).+(?=\\par)/,
-  networkConfig: /(?<=\[ ba8\] Network\sConfig:\s+).+(?=\\par)/,
-  clock: /(?<=\[ ba8\] Clock:\s+).+(?=\\par)/,
+  model: /(?<=\[ ba8\] Model:\s+).+/,
+  serialNumber: /(?<=\[ ba8\] S\/N:\s+).+/,
+  printerName: /(?<=\[ ba8\] Printer\sName:\s+).+/,
+  version: /(?<=\[ ba8\] Version:\s+).+/,
+  networkConfig: /(?<=\[ ba8\] Network\sConfig:\s+).+/,
+  clock: /(?<=\[ ba8\] Clock:\s+).+/,
 };
 
 for (const line of lines) {
