@@ -5,7 +5,8 @@ if (process.argv.length < 3) {
 }
 
 const filePath = process.argv[2];
-const searchQuery = process.argv.length > 3 ? process.argv[3] : "";
+const searchQuery =
+  process.argv.length > 3 ? new RegExp(process.argv[3], "i") : "";
 
 const lines = readFileSync(filePath, "utf8").split(`\n`);
 
